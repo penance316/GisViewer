@@ -1,0 +1,23 @@
+.map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.map:-moz-full-screen {
+    height: 98%;
+}
+
+.map:-webkit-full-screen {
+    height: 98%;
+}
+
+.map:-ms-fullscreen {
+    height: 98%;
+}
+
+.map:full-screen {
+    height: 98%;
+}

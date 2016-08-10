@@ -1,0 +1,94 @@
+.sidebar-holder {
+    height: 100%;
+    width: 320px;
+    background: #fff;
+    box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    left: 60px;
+    /*padding-top: 50px;*/
+    position: absolute;
+    top: 0;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    z-index: 130;
+}
+
+.sidebar {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.view-title:hover, .view-title:focus {
+    background: #f2f2f2;
+}
+
+.view-title {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.pois-list {
+    border-top: 1px solid #f2f1ee;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pois-list-item {
+    border-bottom: 1px solid #f2f1ee;
+    cursor: pointer;
+    height: 120px;
+    overflow: hidden;
+    padding: 8px 10px 0 80px;
+    position: relative;
+    transition: opacity 0s linear .05s;
+}
+
+.pois-list-subtitle {
+    display: block;
+    height: 32px;
+    line-height: 16px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.pois-list-handle {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    cursor: move;
+}
+
+.pois-list-image {
+    height: 100px;
+    width: 60px;
+    border-radius: 10px;
+    left: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+}
+
+.pois-list-item-active {
+    background: #0099dd;
+    color: #fff;
+}
+
+.pois-list-item:hover {
+    background: #f2f1ee;
+}
+
+.pois-list-item-active:hover {
+    background: #0081ba;
+}
+
+.sidebar  .input-group-btn {
+    padding-left: 15px;
+}

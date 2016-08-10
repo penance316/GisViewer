@@ -1,0 +1,113 @@
+.sidemenu-holder {
+    height: 100%;
+    width: 60px;
+    background: #202020;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    z-index: 140;
+}
+
+.sidemenu {
+    font-size: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+.sidemenu a {
+    background: #202020;
+    color: #aaa;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 60px;
+    position: relative;
+    text-decoration: none;
+}
+
+.sidemenu a.glyphicon {
+    /*top: 50px;*/
+}
+
+.sidemenu a:before {
+    height: 60px;
+    width: 60px;
+    background: #202020;
+    font-size: 32px;
+    left: 0;
+    line-height: 60px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+
+.sidemenu a:after {
+    bottom: 14px;
+    font-size: 8px;
+    line-height: 8px;
+    position: absolute;
+    right: 13px;
+    z-index: 2;
+}
+
+.sidemenu a:hover, .sidemenu a:focus {
+    background: #0081ba;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidemenu a:hover:before,
+.sidemenu a:hover span, .sidemenu a:focus:before,
+.sidemenu a:focus span {
+    background: #0081ba;
+}
+
+.sidemenu a.active {
+    background: #0099dd;
+    color: #fff;
+    cursor: default;
+}
+
+.sidemenu a.active:before,
+.sidemenu a.active span {
+    background: #0099dd;
+}
+
+.sidemenu span {
+    background: #202020;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    margin-left: -200px;
+    padding-right: 30px;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    font-family: "Century Gothic", Arial, Georgia;
+}
+
+.sidemenu-hover span {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.sidemenu-separator {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.feedback-button {
+    /*height: 100px;*/
+    width: 60px;
+    bottom: 0;
+    color: #aaa;
+    left: 0;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    /*replace with glphyicon*/
+}

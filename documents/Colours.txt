@@ -1,0 +1,2 @@
+hex for the green #00B2A9
+hex for the blue #002F5F

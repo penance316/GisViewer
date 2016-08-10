@@ -1,0 +1,36 @@
+{
+  "name": "OpenLayers3Angular",
+  "version": "0.0.1",
+  "authors": [
+    "Nero Denney <nero>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "proj4": "~2.3.4",
+    "angular": "1.4.0-build.3892+sha.1924cf2",
+    "angular-ui-router": "~0.2.13",
+    "bootstrap": "~3.3.2",
+    "angular-bootstrap": "~0.12.1",
+    "openlayers3": "~3.0.0",
+    "ngSanitize": "~0.0.2"
+  },
+  "resolutions": {
+    "angular": "1.4.0-build.3892+sha.1924cf2"
+  },
+  "overrides": {
+    "openlayers3": {
+      "main": [
+        "build/ol.js",
+        "build/ol.css"
+      ]
+    }
+  }
+}

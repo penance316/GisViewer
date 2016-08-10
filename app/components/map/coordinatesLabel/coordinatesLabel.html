@@ -1,0 +1,12 @@
+<div id="coordinateLabel">
+    <h6>Easting <span id="easting" class="nav">{{vm.coords[0] | decimalFilter:0}}</span></h6>
+    <h6>Northing <span id="northing" class="nav">{{vm.coords[1] | decimalFilter:0}}</span></h6>
+    <h6 id="instructions">Type postcode or easting and northing pair and press enter</h6>
+
+    <form class="form-inline">
+        <div id="postcode_lookup" class="form-group" >
+            <input type="text" placeholder="BN1 or 539717 101536" id="postcode_query" class="form-control" ng-keyup="vm.postCodeKeyUped($event)">
+        </div>
+    </form>
+    <table id="info" class="table table-condensed" style="display: none;"></table>
+</div>

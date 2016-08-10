@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIS Viewer</title>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+    <link rel="stylesheet" href="bower_components/openlayers3/build/ol.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/lib/angular-openlayers-directive.css">
+    <link rel="stylesheet" href="/components/header/header.css">
+    <link rel="stylesheet" href="/components/map/map.css">
+    <link rel="stylesheet" href="/components/sideMenu/sidemenu.css">
+    <link rel="stylesheet" href="/components/sidePanel/sidePanel.css">
+    <link rel="stylesheet" href="/shared/css/bootstrap-custom.css">
+    <link rel="stylesheet" href="/shared/css/main.css">
+    <link rel="stylesheet" href="/shared/css/shared.css">
+    <link rel="stylesheet" href="/components/map/coordinatesLabel/coordinatesLabel.css">
+    <link rel="stylesheet" href="/components/sidePanel/drawingToolsPanel/drawingToolsPanel.css">
+    <!-- endinject -->
+</head>
+
+<body ng-app="app">
+
+<gs-header></gs-header>
+<div class="page-holder">
+    <!--Content Here-->
+    <div class="page" ui-view=""></div>
+
+</div>
+
+
+<!-- bower:js -->
+<script src="bower_components/proj4/dist/proj4.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="bower_components/angular-ui-sortable/sortable.js"></script>
+<script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+<script src="bower_components/angular-bootstrap-switch/dist/angular-bootstrap-switch.js"></script>
+<script src="bower_components/toastr/toastr.js"></script>
+<script src="bower_components/angular-filter/dist/angular-filter.js"></script>
+<script src="bower_components/openlayers3/build/ol.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-openlayers-directive/dist/angular-openlayers-directive.min.js"></script>
+<!-- endbower -->
+
+<!-- inject:js -->
+<script src="/app.module.js"></script>
+<script src="/app.config.js"></script>
+<script src="/app.contants.js"></script>
+<script src="/app.routes.js"></script>
+<script src="/components/MdSlider.js"></script>
+<script src="/shared/myLogger.factory.js"></script>
+<script src="/components/header/header.controller.js"></script>
+<script src="/components/header/header.directive.js"></script>
+<script src="/components/map/map.controller.js"></script>
+<script src="/components/map/map.directive.js"></script>
+<script src="/components/map/map.service.js"></script>
+<script src="/components/sideMenu/sideMenu.controller.js"></script>
+<script src="/components/sideMenu/sideMenu.directive.js"></script>
+<script src="/components/sidePanel/sidePanel.controller.js"></script>
+<script src="/components/sidePanel/sidePanel.directive.js"></script>
+<script src="/components/sidePanel/sidePanel.service.js"></script>
+<script src="/shared/filters/coordinates.filter.js"></script>
+<script src="/shared/filters/decimal.filter.js"></script>
+<script src="/shared/services/location.service.js"></script>
+<script src="/shared/services/postcode.service.js"></script>
+<script src="/components/map/coordinatesLabel/coordinatesLabel.directive.js"></script>
+<script src="/components/sidePanel/drawingToolsPanel/drawingToolsPanel.controller.js"></script>
+<script src="/components/sidePanel/drawingToolsPanel/drawingToolsPanel.directive.js"></script>
+<script src="/components/sidePanel/layersPanel/layersPanel.controller.js"></script>
+<script src="/components/sidePanel/layersPanel/layersPanel.directive.js"></script>
+<!-- endinject -->
+
+</body>
+
+</html>

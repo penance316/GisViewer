@@ -1,0 +1,18 @@
+<ul class="pois-list" ng-model="vm.layers" ui-sortable="vm.sortableOptions">
+    <li class="pois-list-item" ng-repeat="layer in vm.layers">
+        <img ng-src="http://photos.tripomatic.com/photo/70x70/612664395a40232133447d33247d3832343638393731.jpg"
+             width="70" height="70"
+             class="pois-list-image">
+        <b class="pois-list-title">{{layer.name}}</b>
+
+        <div class="pois-list-handle glyphicon glyphicon-move pull-right"></div>
+        <span class="pois-list-subtitle">{{layer.desc}}</span>
+
+        <div class="input-group">
+            <md-slider lose-focus aria-label="opacity" ng-model="layer.opacity" min="0" step="0.01" max="1"></md-slider>
+                    <span class="input-group-btn">
+                        <md-switch aria-label="toggle layer" md-no-ink ng-model="layer.active"></md-switch>
+                    </span>
+        </div>
+    </li>
+</ul>

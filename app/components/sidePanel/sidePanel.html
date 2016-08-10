@@ -1,0 +1,12 @@
+<div class="sidebar-holder">
+    <div class="sidebar-header">
+        <div class="view-title">
+            <span>{{vm.getActive().heading}}</span>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <gs-layers-panel ng-if="vm.getActive().heading === 'Layers'"></gs-layers-panel>
+        <gs-drawing-tools-panel ng-if="vm.getActive().heading === 'Drawing Tools'"></gs-drawing-tools-panel>
+    </div>
+</div>

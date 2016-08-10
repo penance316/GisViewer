@@ -1,0 +1,49 @@
+{
+  "name": "OpenLayers3Angular",
+  "version": "0.0.1",
+  "authors": [
+    "Nero Denney <nero>"
+  ],
+  "//": [
+    "angular dependency on jquery is to make sure jquery is loaded before angular so that ui-sortable works"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "proj4": "~2.3.4",
+    "angular": "1.4.0-build.3892+sha.1924cf2",
+    "angular-ui-router": "~0.2.13",
+    "bootstrap": "3.3.4",
+    "angular-bootstrap": "~0.12.1",
+    "underscore": "~1.8.3",
+    "angular-ui-sortable": "~0.13.4",
+    "angular-bootstrap-switch": "~0.4.1",
+    "toastr": "~2.1.1",
+    "angular-filter": "~0.5.4",
+    "openlayers3": "~3.0.0",
+    "angular-material": "~0.10.0",
+    "angular-openlayers-directive": "~0.0.9"
+  },
+  "resolutions": {
+    "angular": "~1.4.0"
+  },
+  "overrides": {
+    "angular": {
+      "dependencies": {
+        "jquery": "*"
+      }
+    },
+    "openlayers3": {
+      "main": [
+        "build/ol.js",
+        "build/ol.css"
+      ]
+    }
+  }
+}

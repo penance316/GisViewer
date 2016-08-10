@@ -1,0 +1,4 @@
+<openlayers class="map table-bordered" ol-center="vm.center" ol-defaults="vm.defaults">
+    <ol-layer name="{{ layer.name }}" ol-layer-properties="layer" ng-repeat="layer in vm.layers | filter: { active: true}"></ol-layer>
+    <ol-control name="{{ control.name }}" ng-repeat="control in vm.controls | filter: { active: true }"></ol-control>
+</openlayers>

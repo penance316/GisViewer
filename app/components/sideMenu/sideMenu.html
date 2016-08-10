@@ -1,0 +1,12 @@
+<div class="sidemenu-holder on-planner ng-scope" ng-class="{ 'sidemenu-holder-active': show.menu }">
+    <ul class="sidemenu" ng-class="{'sidemenu-hover': vm.menuHover }" ng-mouseenter="vm.menuHover = true"
+        ng-mouseleave="vm.menuHover = false">
+
+        <li ng-repeat="item in vm.items" class="">
+            <a href="" ng-click="$parent.vm.setSidePanelContents(item.panelHeading)" class="glyphicon {{ item.iconClass }}">
+                <span class="sidemenu-hover">{{ item.name }}</span>
+            </a>
+        </li>
+    </ul>
+    <a class="feedback-button" title="Send feedback">?</a>
+</div>
